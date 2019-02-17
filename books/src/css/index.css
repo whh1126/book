@@ -1,0 +1,296 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: 0;
+  font-family: STHeitiSC-Light;
+  font: inherit;
+  vertical-align: baseline; }
+
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: none; }
+
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  font-family: arial, sans-serif; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none; }
+
+ins,
+a {
+  text-decoration: none; }
+
+del {
+  text-decoration: line-through; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+img {
+  display: inline-block; }
+
+input,
+textarea {
+  border: none;
+  background: none;
+  outline: none;
+  -webkit-appearance: none; }
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+  -ms-tap-highlight-color: rgba(0, 0, 0, 0);
+  -o-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+/*html {
+    font-size: $browser-default-font-size;
+}*/
+html {
+  font-size: 37.5px; }
+
+.wrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .wrap header {
+    width: 100%;
+    height: 1.17333rem;
+    background: #ccc;
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-align-items: center;
+    align-items: center;
+    padding: 0.26667rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    justify-content: center; }
+    .wrap header h3 {
+      font-size: 0.37333rem;
+      text-align: center; }
+  .wrap section {
+    width: 100%;
+    -webkit-flex: 1 1 0%;
+    flex: 1 1 0%;
+    overflow: hidden; }
+    .wrap section ul {
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      padding: 0.26667rem;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      justify-content: space-between; }
+      .wrap section ul li img {
+        width: 100%; }
+    .wrap section h2 {
+      font-size: 0.53333rem;
+      font-weight: 600;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */
+      justify-content: center; }
+    .wrap section .big-content .content {
+      width: 100%;
+      display: flex;
+      /* NEW, Spec - Opera 12.1, Firefox 20+ */
+      display: -webkit-flex;
+      /* NEW - Chrome */ }
+      .wrap section .big-content .content .big {
+        width: 100%;
+        display: flex;
+        /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-flex;
+        /* NEW - Chrome */
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0.26667rem; }
+        .wrap section .big-content .content .big .continner {
+          width: 50%; }
+          .wrap section .big-content .content .big .continner img {
+            width: 100%; }
+        .wrap section .big-content .content .big .word {
+          width: 50%;
+          font-size: 0.4rem;
+          padding: 0.26667rem;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+          margin-top: 0.26667rem; }
+          .wrap section .big-content .content .big .word h3 {
+            font-weight: normal;
+            font-size: 0.37333rem; }
+          .wrap section .big-content .content .big .word p {
+            font-size: 0.34667rem;
+            color: #ccc; }
+          .wrap section .big-content .content .big .word > div {
+            width: 100%; }
+            .wrap section .big-content .content .big .word > div b {
+              font-size: 0.42667rem;
+              color: red; }
+            .wrap section .big-content .content .big .word > div span {
+              padding: 0.08rem;
+              font-size: 0.37333rem;
+              border: solid 1px orange; }
+            .wrap section .big-content .content .big .word > div .address {
+              font-size: 0.34667rem; }
+            .wrap section .big-content .content .big .word > div > div h4 {
+              font-size: 0.34667rem;
+              font-weight: normal;
+              padding: 0.13333rem;
+              margin-left: 0.13333rem; }
+            .wrap section .big-content .content .big .word > div > div em {
+              padding: 0.26667rem;
+              -webkit-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -o-box-sizing: border-box;
+              box-sizing: border-box; }
+    .wrap section .pullDown {
+      width: 100%;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background: #ccc; }

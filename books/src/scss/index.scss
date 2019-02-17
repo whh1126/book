@@ -1,0 +1,114 @@
+@import "common.scss";
+@import "_minix.scss";
+.wrap {
+    width: 100%;
+    height: 100%;
+    @include box_flex;
+    @include direction(column);
+    header {
+        width: 100%;
+        height: pxTorem(44px);
+        background: #ccc;
+        @include box_flex;
+        @include justify(space-between);
+        @include align;
+        padding: pxTorem(10px);
+        @include sizing;
+        justify-content: center;
+        h3 {
+            font-size: pxTorem(14px);
+            text-align: center;
+        }
+    }
+    section {
+        div {}
+        ul {
+            @include box_flex;
+            padding: pxTorem(10px);
+            @include sizing;
+            justify-content: space-between;
+            li {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        h2 {
+            font-size: pxTorem(20px);
+            font-weight: 600;
+            @include box_flex;
+            justify-content: center;
+        }
+        width: 100%;
+        @include flex;
+        overflow: hidden;
+        .big-content {
+            .content {
+                width: 100%;
+                @include box_flex;
+                .big {
+                    width: 100%;
+                    @include box_flex;
+                    @include sizing;
+                    padding: pxTorem(10px);
+                    .continner {
+                        width: 50%;
+                        img {
+                            width: 100%;
+                        }
+                    }
+                    .word {
+                        width: 50%;
+                        font-size: pxTorem(15px);
+                        padding: pxTorem(10px);
+                        @include sizing;
+                        margin-top: pxTorem(10px);
+                        h3 {
+                            font-weight: normal;
+                            font-size: pxTorem(14px);
+                        }
+                        p {
+                            font-size: pxTorem(13px);
+                            color: #ccc;
+                        }
+                        >div {
+                            width: 100%;
+                            b {
+                                font-size: pxTorem(16px);
+                                color: red;
+                            }
+                            span {
+                                padding: pxTorem(3px);
+                                font-size: pxTorem(14px);
+                                border: solid 1px orange;
+                            }
+                            .address {
+                                font-size: pxTorem(13px);
+                            }
+                            >div {
+                                h4 {
+                                    font-size: pxTorem(13px);
+                                    font-weight: normal;
+                                    padding: pxTorem(5px);
+                                    margin-left: pxTorem(5px);
+                                }
+                                em {
+                                    padding: pxTorem(10px);
+                                    @include sizing;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .pullDown {
+            width: 100%;
+            text-align: center;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #ccc;
+        }
+    }
+}
